@@ -1,8 +1,14 @@
 class FizzBuzz {
-  Fizz(int numero) {
+  bool fizz(int numero) {
     num restoDivisao = numero % 3;
-    if()
+    if (restoDivisao == 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 
+  bool buzz(int numero) {
     return false;
   }
 
