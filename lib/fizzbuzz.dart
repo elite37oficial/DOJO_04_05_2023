@@ -9,7 +9,22 @@ class FizzBuzz {
   }
 
   bool buzz(int numero) {
-    return false;
+    num restoDivisao = numero % 5;
+    if (restoDivisao == 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  bool fizzBuzz(int numero) {
+    num restoDivisaoTres = numero % 3;
+    num restoDivisaoCinco = numero % 5;
+    if (restoDivisaoTres == 0 && restoDivisaoCinco == 0) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
   // divisor() {
