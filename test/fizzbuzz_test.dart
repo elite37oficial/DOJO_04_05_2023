@@ -6,6 +6,6 @@ void main() {
   FizzBuzz fizzBuzz = FizzBuzz();
 
   test('fizzbuzz ...', () async {
-   expect(fizzBuzz.)
+    expect(fizzBuzz.Fizz(3), true);
   });
 }
