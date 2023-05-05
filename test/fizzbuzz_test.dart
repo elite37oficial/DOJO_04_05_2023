@@ -25,4 +25,8 @@ void main() {
     expect(fizzBuzz.fizzBuzz(3), false);
     expect(fizzBuzz.fizzBuzz(5), false);
   });
+
+  test('loopFizzBuzz', () async {
+    expect(fizzBuzz.loopFizzBuzz(1, 5), [1, 2, "Fizz", 4, "Buzz"]);
+  });
 }
