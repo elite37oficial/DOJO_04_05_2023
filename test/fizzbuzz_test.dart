@@ -1,6 +1,5 @@
+import 'package:dojo/fizzbuzz.dart';
 import 'package:test/test.dart';
-
-import '../lib/fizzbuzz.dart';
 
 void main() {
   FizzBuzz fizzBuzz = FizzBuzz();
@@ -28,5 +27,7 @@ void main() {
 
   test('loopFizzBuzz', () async {
     expect(fizzBuzz.loopFizzBuzz(1, 5), [1, 2, "Fizz", 4, "Buzz"]);
+    expect(fizzBuzz.loopFizzBuzz(25, 30),
+        ["Buzz", 26, "Fizz", 28, 29, "FizzBuzz"]);
   });
 }

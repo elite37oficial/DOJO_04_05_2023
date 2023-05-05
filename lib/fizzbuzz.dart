@@ -13,9 +13,9 @@ class FizzBuzz {
     return fizz(numero) && buzz(numero) ? true : false;
   }
 
-  List<dynamic> loopFizzBuzz() {
+  List<dynamic> loopFizzBuzz(int inicio, int fim) {
     List resultados = [];
-    for (var i = 0; i < 100; i++) {
+    for (var i = inicio; i <= fim; i++) {
       if (fizzBuzz(i) == true) {
         resultados.add("FizzBuzz");
       } else if (fizz(i) == true) {
